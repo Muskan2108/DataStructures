@@ -29,7 +29,14 @@ void push(int x)
 }
 void pop()
 {
-	top=top-1;
+	if(top==-1)
+	{
+		cout<<"Cannot pop"<<endl;
+	}
+	else
+	{
+		top=top-1;
+	}
 }
 void peep()
 {
